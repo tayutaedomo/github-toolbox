@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "My toolbox for GitHub management",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fetch": "poetry run python scripts/fetch_own_repos.py"
   },
   "keywords": [],
   "author": "",
