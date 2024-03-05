@@ -15,6 +15,7 @@ if __name__ == "__main__":
     for issue in repo.get_issues(state="closed", assignee=assignee):
         title = issue.title
         state = issue.state
+        item_type = "issue" if issue.pull_request is None else "pr"
         created_at = issue.created_at.isoformat()
         closed_at = issue.closed_at.isoformat() if issue.state == "closed" else ""
-        print(title, state, created_at, closed_at)
+        print("\t".join([item_type, title, state, created_at, closed_at]))
