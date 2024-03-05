@@ -4,7 +4,7 @@
   "description": "My toolbox for GitHub management",
   "scripts": {
     "fetch": "poetry run python scripts/fetch_own_repos.py",
-    "fetch:issues": "poetry run python scripts/fetch_assigned_issues.py tayutaedomo/github-toolbox"
+    "fetch:issues": "poetry run python scripts/fetch_assigned_issues.py tayutaedomo/github-toolbox tayutaedomo"
   },
   "keywords": [],
   "author": "",
